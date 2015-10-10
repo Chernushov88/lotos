@@ -1,0 +1,111 @@
+﻿@media (min-width:768px) and (max-width:1204px){ 
+	.desktop-hidden {display: block !important;}
+	/* header */
+	nav.nav-header {font-size: 16px; background: url(../images/header/nav-repeat-tablet.png) center 0 repeat-x;}
+	.nav-header .nav-header-inside {width: 721px; background: url(../images/header/nav-header-tablet.png) center 0 no-repeat;}
+	.nav-header-inside .nav-header-left li{margin: 0px 35px 0 0; border-top: 3px solid #0e76bb;}
+	.nav-header-inside .nav-header-left li:hover {border-top: 3px solid #f2be6d;}
+	.nav-header-inside .nav-header-right {font-size: 14px;}
+	.nav-header-inside .login {width: 227px;}
+	.nav-header-inside .login li:first-child a {padding: 0 10px 0 31px; background: url(../images/header/user-bg-tablet.png) 5px center no-repeat;}	
+	.nav-header-inside .cart {width: 192px; float: right;}
+	.nav-header-inside .cart li a {font-size: 14px;}
+	.nav-header-inside .cart li:first-child a {padding: 0 1px 0 60px; background: url(../images/header/cart-bg-tablet.png) 30px center no-repeat;}
+	
+	div.header-inside {width: 721px;}
+	.header-inside .logo {width: 230px;}
+	.header-inside .logo a {padding: 68px 0 19px 0; line-height: 15px; text-align: center; font-size: 14px; background: url(../images/header/logo-tablet.png) 0px 19px no-repeat;}
+	.header-inside form.search {width: 196px; padding: 70px 0 0 14px;}
+	.header-inside form.search input[type=text] {width: 181px; height: 27px; padding: 0 0 0 13px;}
+	.header-inside form.search::-webkit-input-placeholder {font-size: 13.5px;}
+	.header-inside form.search:-moz-placeholder {font-size: 13.5px;}
+	.header-inside form.search::-moz-placeholder {font-size: 13.5px;}
+	.header-inside form.search:-ms-input-placeholder {font-size: 13.5px;}
+ 	.header-inside form.search input[type=submit] {bottom: 2px; right: 5px; width: 24px; height: 23px; background: url(../images/header/search-bg-tablet.png);}
+ 	.contacts ul {padding: 5px 0 0 0;}
+	.header-inside .contacts li a {padding: 13px 0 0 44px; letter-spacing: 0.5px; font-size: 16px;}
+	.contacts .phone {background: url(../images/header/phone-bg-tablet.png) 0px 8px no-repeat;}
+	.contacts .email {    background: url(../images/header/email-bg-tablet.png) 5px 10px no-repeat;}
+	.header-inside .callback {width: 211px; height: 10px; margin: 9px 0 0 0; padding: 11px 0 11px 22px; font-size: 12px; background: url(../images/header/feedback-bg-tablet.png) 0px 0px no-repeat;}
+	
+	/* sidebar-left */
+	section.main-inside {width: 721px; padding: 20px 24px 105px 23px;}
+	.main-inside .sidebar-left {width: 169px;}
+	.main-inside h2 {padding: 3px 0 7px 0; letter-spacing: 1px; font-size: 16px;}
+	.main-inside .sidebar-left h3 {padding: 6px 0 0 0; font-size: 16px;}
+	.main-inside .sidebar-left span {padding: 3px 7px 4px 0;}
+	.main-inside .sidebar-left a {padding: 9px 0 7px 2px; font-size: 16px}
+	.main-inside .sidebar-left span.desktop-visible {display: none;}
+	
+	/* content */
+	section.content {width: 536px; padding: 0 0 0 16px;}
+	.content .slider {position: relative; left:-10px; width: 553px; height: 211px;}
+	.slider .bxslider li h2 {top: 30px; left: 79px; line-height: 22px; font-size: 23.4px;}
+	.slider .bxslider li span {top: 78px; left: 79px; font-size: 15.6px;}
+	.slider .bxslider li a {top: 128px; left: 79px; width: 72px; padding: 5px 17px; letter-spacing: 0px; font-size: 14px; color: #534e46;}
+
+	.content .thumbnail {padding: 0;}
+	.content .thumbnail li {padding-top: 10px;}
+	.content .thumbnail li:nth-child(2n+2) {padding-left: 14px;}
+	.content .thumbnail a{width: 261px; height: 69px; font-size: 22.6px;}
+	.thumbnail a.india{background: url(../images/content/india-tablet.jpg);}
+	.thumbnail a.china{background: url(../images/content/china-tablet.jpg);}
+	.thumbnail a.indonezia{background: url(../images/content/indonezia-tablet.jpg);}
+	.thumbnail a.nepal{background: url(../images/content/nepal-tablet.jpg);}
+	.thumbnail a.tailand{background: url(../images/content/tailand-tablet.jpg);}
+	.thumbnail a.russia{background: url(../images/content/russia-tablet.jpg);}
+
+	.desktop-visible {display: none;}
+	.content .sidebar-right {overflow: hidden; width: 100%; padding: 14px 0 0 0; float: none;}
+	.sidebar-right .sidebar-1, .sidebar-right .sidebar-2, .sidebar-right .sidebar-3 {width: 169px; margin: 0 0 14px 0; float: left;}
+	.sidebar-2 {padding: 0 14px;}
+	.sidebar-1 .sidebar-1-inside, .sidebar-2 .sidebar-2-inside, .sidebar-3 .sidebar-3-inside {width: 169px; height: 56px;}
+	.content .sidebar-right h3 {padding: 0px 0 3px 0; font-size: 16px;}
+	.content .sidebar-right h4 {font-size: 14px;}
+	.sidebar-right .sidebar-1 h4 {padding: 3px 0 0 0;}
+	.sidebar-right .sidebar-3 h4 {font-size: 22px;}
+	.content .sidebar-right a {width: 61px; padding: 2px 9px; font-size: 12px;}
+	.content .sidebar-1 a {margin: 2px auto 0 auto;}
+	.content .sidebar-2 a {margin: 2px auto 0 auto;}
+	.content .sidebar-3 a {margin: 8px auto 0 auto;}
+
+	.main-inside  .content-text {padding: 0px;}
+	.main-inside .content-text h2 {margin: 0 0 5px 0; padding-bottom: 0; font-size: 22px;}
+	.main-inside .content-text p {padding: 0px 2px 0 0; line-height: 22px; font-size: 15px; letter-spacing: 0.7px;}
+
+    /*nav-footer*/
+    .nav-footer .nav-footer-inside {width: 721px;}
+	.nav-footer .nav-footer-inside li{margin: 0px 35px 0 0;}
+	.nav-footer .nav-footer-inside li {margin: 0px 75px 0 25px;}
+	/*footer-inside*/
+	footer .footer-inside {width: 721px;}
+	.footer-inside .logo-footer {overflow: hidden; width: 483px; padding: 0;}
+	.logo-footer a.logo-a-footer {padding: 86px 0 0px 0; letter-spacing: 0.2px; text-align: left; font-size: 14px; background: url(../images/header/logo-tablet.png) 0px 19px no-repeat; float: left;}
+	.footer-inside .social {padding: 30px 10px 20px 28px;}
+	.footer-inside .logo-footer p {padding: 10px 0 0 0; letter-spacing: -0.5px;}
+	
+	.footer-inside .footer-contacts {padding: 0;}
+	.footer-contacts ul {padding: 5px 0 0 0;}
+	.footer-inside .footer-contacts li a {padding: 13px 0 0 44px; letter-spacing: 0.5px; font-size: 16px;}
+	.footer-contacts .footer-phone a{background: url(../images/header/phone-bg-tablet.png) 0px 8px no-repeat;}
+	.footer-contacts .footer-email a{    background: url(../images/header/email-bg-tablet.png) 5px 10px no-repeat;}
+	.footer-inside .callback {width: 211px; height: 10px; margin: 9px 0 0 0; padding: 11px 0 11px 22px; font-size: 12px; background: url(../images/header/feedback-bg-tablet.png) 0px 0px no-repeat;}
+
+
+
+
+
+
+
+}
+
+
+/*----------------------------------------------*/
+
+
+@media (min-width:320px) and (max-width:767px){ 
+
+ 
+}
+
+

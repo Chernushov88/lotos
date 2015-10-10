@@ -1,0 +1,1092 @@
+﻿@charset "utf-8";  
+
+@import url(css/media.css);
+@import url(css/reset.css); 
+
+ 
+/* ----------------------------Блок присоединения шрифтов--------------------------------*/
+
+@font-face {
+font-family: 'PhilosopherRegular';
+src: url('fonts/PhilosopherRegular/PhilosopherRegular.eot');
+src: url('fonts/PhilosopherRegular/PhilosopherRegular.eot?#iefix') format('embedded-opentype'),
+ url('fonts/PhilosopherRegular/PhilosopherRegular.woff') format('woff'),
+ url('fonts/PhilosopherRegular/PhilosopherRegular.ttf') format('truetype'),
+ url('fonts/PhilosopherRegular/PhilosopherRegular.svg#fonts/PhilosopherRegular/PhilosopherRegular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'PhilosopherBold';
+src: url('fonts/PhilosopherBold/PhilosopherBold.eot');
+src: url('fonts/PhilosopherBold/PhilosopherBold.eot?#iefix') format('embedded-opentype'),
+ url('fonts/PhilosopherBold/PhilosopherBold.woff') format('woff'),
+ url('fonts/PhilosopherBold/PhilosopherBold.ttf') format('truetype'),
+ url('fonts/PhilosopherBold/PhilosopherBold.svg#fonts/PhilosopherBold/PhilosopherBold') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'PhilosopherItalic';
+src: url('fonts/PhilosopherItalic/PhilosopherItalic.eot');
+src: url('fonts/PhilosopherItalic/PhilosopherItalic.eot?#iefix') format('embedded-opentype'),
+ url('fonts/PhilosopherItalic/PhilosopherItalic.woff') format('woff'),
+ url('fonts/PhilosopherItalic/PhilosopherItalic.ttf') format('truetype'),
+ url('fonts/PhilosopherItalic/PhilosopherItalic.svg#fonts/PhilosopherItalic/PhilosopherItalic') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'PhilosopherBoldItalic';
+src: url('fonts/PhilosopherBoldItalic/PhilosopherBoldItalic.eot');
+src: url('fonts/PhilosopherBoldItalic/PhilosopherBoldItalic.eot?#iefix') format('embedded-opentype'),
+ url('fonts/PhilosopherBoldItalic/PhilosopherBoldItalic.woff') format('woff'),
+ url('fonts/PhilosopherBoldItalic/PhilosopherBoldItalic.ttf') format('truetype'),
+ url('fonts/PhilosopherBoldItalic/PhilosopherBoldItalic.svg#fonts/PhilosopherBoldItalic/PhilosopherBoldItalic') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+
+/* ------------------------------ Конец блока присоединения шрифтов ------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*  TYPOGRAPHY
+/*-----------------------------------------------------------------------------------*/
+body{
+    font-family: 'PhilosopherRegular';
+    background: url(images/background.png);
+    color: #373636;
+}
+h2, h3{
+    font-family: 'PhilosopherBold';
+    
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+    opacity: 0.9;
+}
+h3{
+    color: #0e76bb;
+    font-size: 18px;    
+}
+a{
+    text-decoration: none;
+    color: #373636;
+}
+.desktop-hidden {display: none;}
+.clear{
+    clear: both;
+}
+/* ------------------------------  start header ------------------------------ */
+header{
+    width: 100%;
+    border: 0px solid #00ccff;
+}
+.nav-header{
+    max-width: 100%;
+    height: 59px;
+    font-size: 20px;
+    background: url(images/header/nav-repeat.png) center 0 repeat-x ;
+}
+.nav-header-inside{
+    max-width: 1181px;
+    height: 59px;
+    margin: 0 auto;
+    background: url(images/header/nav-header.png) center 0 no-repeat;
+    border: 0px solid #ff00ff;
+}
+.nav-header-left{
+    float: left;
+}
+.nav-header-left li{
+    margin: 0px 95px 0 0;
+    border-top: 4px solid #0e76bb;
+    float: left;
+}
+.nav-header-left li:hover{
+    border-top: 4px solid #f2be6d;
+}
+.nav-header-left li a{
+    display: table-cell;
+    vertical-align: middle;
+    height: 49px;    
+    cursor: pointer;
+    color: #fff;
+}
+.nav-header-left li a:hover{
+    color: #f2be6d;
+}
+/*-----*/
+.nav-header-right{
+    float: right;
+}
+.login{
+    width: 250px;
+    float: left;
+}
+.login li{
+    border-top: 4px solid #0e76bb;
+    float: left;
+}
+.login li:first-child a{
+    padding: 0 10px 0 44px;
+    background: url(images/header/user-bg.png) 5px 7px no-repeat;
+}
+.login li a{
+    display: table-cell;
+    vertical-align: middle;
+    height: 49px;    
+    cursor: pointer;
+    color: #fffefe;
+}
+.cart{
+    width: 221px;
+    float: left;
+}
+.cart li{
+    float: left;
+}
+.cart li:first-child a{
+    padding: 0 1px 0 60px;
+    background: url(images/header/cart-bg.png) 16px 13px no-repeat;
+}
+.cart li a{
+    display: table-cell;
+    vertical-align: middle;
+    height: 59px;    
+    cursor: pointer;
+    font-size: 16px;
+    color: #0e76bb;
+}
+/* ----- header-inside ----- */
+.header-inside{
+    overflow: hidden;
+    max-width: 1181px;
+    margin: 0 auto;
+    border-bottom: 1px solid #0e76bb;
+}
+.logo{
+    width: 380px;
+    float: left;
+}
+.logo a{
+    display: block;
+    padding: 109px 0 14px 0;
+    font-size: 16px;
+    background: url(images/header/logo.png) 0 28px no-repeat;
+    letter-spacing: 1.7px;
+    border-bottom: 2px solid #0e76bb; 
+}
+form.search {
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    padding: 80px 0 0 140px;
+    float: left;
+}
+form.search input[type=text]{    
+    width: 240px;
+    height: 39px;
+    padding: 0 0 0 20px;
+    outline: none;
+    border: 1px solid #bababa;
+    border-radius: 20px;
+    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.2)inset;    
+}
+form.search ::-webkit-input-placeholder { /* WebKit browsers */
+    text-overflow:ellipsis;
+    font-family: 'PhilosopherRegular';
+    font-size: 17px;
+    color: #737373;
+}
+form.search :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-overflow:ellipsis;
+    font-family: 'PhilosopherRegular';
+    font-size: 17px;
+    color: #737373;
+}
+form.search ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-overflow:ellipsis;
+   font-family: 'PhilosopherRegular';
+   font-size: 17px;
+    color: #737373;
+}
+form.search :-ms-input-placeholder { /* Internet Explorer 10+ */
+    text-overflow:ellipsis;
+   font-family: 'PhilosopherRegular';
+   font-size: 17px;
+    color: #737373;
+}
+input[type=text] {
+    -webkit-appearance: textfield; // ещё можно указать none
+}
+
+form.search input[type=submit]{
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: url(images/header/search-bg.png);
+    border: none;
+}
+.contacts{
+    float: right;
+}
+
+.contacts li a{
+    display: block;
+    padding: 15px 0 0 64px;
+    font-size: 20px;
+}
+.phone{
+     background: url(images/header/phone-bg.png) 0px 8px no-repeat;
+}
+.email{
+     background: url(images/header/email-bg.png) 5px 11px no-repeat;
+}
+.callback{
+    display: block;
+    width: 279px;
+    height: 10px;
+    margin: 11px 0 0 0;
+    padding: 13px 0 17px 22px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    background: url(images/header/feedback-bg.png) 0px 0px no-repeat;
+}
+.callback:hover{
+    opacity: 0.7;
+}
+/* ------------------------------  stop header ------------------------------ */
+
+/* ------------------------------  Ssart main ------------------------------ */
+.main-inside{
+    overflow: hidden;
+    max-width: 1181px;
+    margin: 0 auto;
+    padding: 20px 0 35px 0;
+    border: 0px solid #cc00ff;
+}
+/*-----start sidebar-left -----*/
+.sidebar-left{
+    width: 220px;
+    float: left;
+    border: 0px solid #12dd66;
+}
+.sidebar-left h3{
+    text-transform: uppercase;
+    padding: 10px 0 0 0;
+    border-bottom: 1px solid #f2be6d;
+}
+.sidebar-left h3 span{
+    display: inline-block;
+    padding: 3px 0 1px 0;
+    border-bottom: 2px solid #f2be6d;
+ }
+ .sidebar-left ul{
+    padding: 0 0 0 8px;
+ }
+.sidebar-left a{
+    display: block;
+    padding: 13px 0 0px 0;
+    font-size: 18px;
+ }
+ .sidebar-left a:hover{
+    color: #0e76bb;
+ }
+/*-----stop sidebar-left -----*/
+
+/*-----start content -----*/
+.content{
+    width: 54%;
+    padding: 0px 10px;
+    float: left;
+    border: 0px solid #6cc6ff;
+}
+.slider {max-width: 638px; height: 219px; margin: 0 auto;}
+.bxslider li h2{
+    position: absolute;
+    top: 21px;
+    left: 90px;
+    letter-spacing: 0.5px;
+    font-family: 'PhilosopherBoldItalic';
+    font-size: 27px;
+    color: #474747;
+}
+.bxslider li span{
+    position: absolute;
+    top: 92px;
+    left: 90px;
+    font-size: 18px;
+    color: #474747;;
+}
+.bxslider li a{
+    position: absolute;
+    top: 147px;
+    left: 90px;
+    display: block;
+    width: 88px;
+    padding: 8px 17px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 16px;
+    color: #737373;
+    border: 1px solid #474747;
+    border-radius: 4px;
+}
+.bxslider li a:hover{
+    background: rgba(0,0,0,.3);
+}
+.thumbnail{
+    overflow: hidden;
+    padding: 0 10px 39px 10px;
+}
+.thumbnail li{
+    padding-top: 20px;
+    float: left;    
+}
+.thumbnail li:nth-child(2n+2){
+    padding-left: 17px;
+}
+.thumbnail a{
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+}
+a.india{
+    background: url(images/content/india.jpg);
+}
+a.china{
+    background: url(images/content/china.jpg);
+}
+a.indonezia{
+    background: url(images/content/indonezia.jpg);
+}
+a.nepal{
+    background: url(images/content/nepal.jpg);
+}
+a.tailand{
+    background: url(images/content/tailand.jpg);
+}
+a.russia{
+    background: url(images/content/russia.jpg);
+}
+/*-----*/
+.content-text{
+    padding: 0px 11px 0 8px;
+}
+.content-text h2{
+    font-family: 'PhilosopherRegular';
+    letter-spacing: 0px;
+    border-bottom: 1px solid #0e76bb;
+}
+.content-text h2 span{
+    display: inline-block;
+    padding: 3px 0 0px 0;
+    border-bottom: 2px solid #0e76bb;
+}
+.content-text p{
+    padding: 8px 18px 0 0;
+    line-height: 23px;
+    font-size: 16px;
+}
+.content-text a{
+    text-decoration: underline;
+    color: #25aae2;
+}
+.content-text a:hover{
+    text-decoration: none;
+}
+/*-----stop content -----*/
+/*-----start sidebar-right -----*/
+.sidebar-right{
+    width: 301px;
+    float: right;
+    border: 0px solid #146556;
+}
+.sidebar-right h3{
+    padding: 0px 0 1px 0;
+    font-family: 'PhilosopherRegular';
+    font-size: 22px;
+    color: #6d6d6d;
+}
+.sidebar-right h4{
+    text-align: center;
+    font-size: 22px;
+    color: #fff9f9;
+}
+.sidebar-1, .sidebar-2, .sidebar-3{
+    margin: 0 0 18px 0;
+}
+.sidebar-1 h4{
+    padding: 8px 0 0 0;
+}
+.sidebar-2 h4{
+    padding: 3px 0 0 0;
+}
+.sidebar-3 h4{
+    font-size: 39px;
+    padding: 3px 0 0 0;
+}
+.sidebar-right a{
+    display: block;
+    width: 88px;
+    padding: 8px 17px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(0,0,0,.2);
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+.sidebar-right a:hover{
+    background: rgba(0,0,0,.7);
+}
+.sidebar-1 a{
+    margin: 4px auto 0 auto;
+}
+.sidebar-2 a{
+    margin: 10px auto 0 auto;
+}
+.sidebar-3 a{
+    margin: 16px auto 0 auto;
+}
+.sidebar-1-inside, .sidebar-2-inside, .sidebar-3-inside{
+    width: 300px;
+    height: 99px;    
+}
+.sidebar-1-inside{
+    background: url(images/content/sidebar1-bg.jpg);
+}
+.sidebar-2-inside{
+    background: url(images/content/sidebar2-bg.jpg);
+}
+.sidebar-3-inside{
+    background: url(images/content/sidebar3-bg.jpg);
+}
+.banner-1{
+    width: 301px;
+    height: 420px;
+    margin: 20px 0 0 0;
+    background: url(images/content/banner1-bg.jpg);
+}
+.banner-2{
+    width: 301px;
+    height: 199px;
+    margin: 20px 0 0 0;
+    background: url(images/content/banner2-bg.jpg);
+}
+.banner-1 h4{
+    padding: 362px 0 0 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #fff;
+}
+.banner-2 h4{
+    padding: 88px 0 0px 90px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #fffefe;
+}
+/*-----stop sidebar-right -----*/
+/* ------------------------------  stop main ------------------------------ */
+/* ------------------------------  start footer ------------------------------ */
+footer{
+    width: 100%;
+    border: 0px solid #552d00;
+}
+/*-----starp nav-footer -----*/
+.nav-footer{
+    width: 100%;
+    height: 48px;
+    background: url(images/footer/nav-repeat-footer.png) center 0 repeat-x ;
+}
+.nav-footer-inside{
+    width: 648px;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.nav-footer-inside li{
+    margin: 0px 88px 0 0;
+    float: left;
+}
+.nav-footer-inside li:last-child{
+    margin: 0;
+}
+.nav-footer-inside li a{
+    display: block;   
+    padding: 15px 0 0 0;   
+    cursor: pointer;
+    color: #fff;
+}
+.nav-footer-inside li a:hover{
+    color: #f2be6d;
+}
+/*-----stop nav-footer -----*/
+/*-----starp footer-inside -----*/
+.footer-inside{
+    overflow: hidden;
+    max-width: 1181px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+    border: 0px solid #5ccdff;
+}
+.social{
+    padding: 58px 0 0 78px;
+    float: left;
+}
+.social li{
+    float: left;
+}
+.social li:nth-child(2){
+    padding: 0 37px;
+}
+.social li a{
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+.social li a:hover{
+    opacity: 0.7;
+}
+.social li:first-child a{
+    background: url(images/footer/vk-bg.png)no-repeat;
+}
+.social li:nth-child(2) a{
+    background: url(images/footer/vse-bg.png)no-repeat;
+}
+.social li:last-child a{
+    background: url(images/footer/facebook-bg.png)no-repeat;
+}
+/*-----*/
+.logo-footer{
+    width: 518px;
+    padding: 0 0 0 101px;
+    float: left;
+}
+a.logo-a-footer{
+    display: block;
+    padding: 101px 0 14px 0;
+    text-align: center;
+    font-size: 16px;
+    background: url(images/header/logo.png) center 22px no-repeat;
+}
+.logo-footer p{
+    font-size: 14px;
+    letter-spacing: -.05px;
+    color: #3f4752;
+}
+/*-----*/
+.footer-contacts{
+    padding: 14px 0 0 0;
+    float: right;
+}
+.footer-contacts li a{
+    display: block;
+    padding: 9px 0 0 44px;
+    letter-spacing: 0.7px;
+    font-size: 22px;
+}
+.footer-phone a{
+     background: url(images/footer/footer-phone-bg.png) 5px 8px no-repeat;
+}
+.footer-email a{
+     background: url(images/footer/footer-phone-bg.png) 5px 8px no-repeat;
+}
+.footer-contacts .callback {
+    margin: 5px 0px 0 0;
+}
+/*-----stop footer-inside -----*/
+/* ------------------------------  stop footer ------------------------------ */
+/* start modal*/
+.darken {
+    display:none;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    background:#000;
+    opacity:0.5;
+    overflow:hidden;
+    z-index:10;
+}
+.closik {
+    display:block;
+    width:40px;
+    height:40px;
+    position:absolute;
+    top:-22px;
+    right:-22px;
+    border-radius:50px;
+    background: rgba(7,152,192,1);
+    color:#fff;
+    text-align:center;
+    font-family:Arial;
+    font-size:14px;
+    line-height:40px;
+    text-decoration:none;
+}
+.closik:hover {
+    opacity:0.8;
+}
+.b-popup {
+    display:none;
+    max-width: 345px;
+    min-height: 370px;
+    padding: 68px 40px 10px 50px;
+    position:fixed;
+    top:20%;
+    left:50%;
+    transform:translate(-50%, 0);
+    background:#fff;
+    border-radius:5px;
+    box-shadow:0px 0px 8px #000;
+    border: 3px solid #0798c7;
+    z-index:100;
+}
+.b-popup h3 {
+    text-align:center;
+    font-family: 'MyriadPro-Bold';
+    font-size:20px;
+    color:#000;
+    text-transform:uppercase;
+}
+.b-popup form input{
+    display: block;
+    width: 310px;
+    height: 40px;
+    margin: 11px auto;
+    padding: 0 0 0 20px;
+    border: 2px solid #16B5E8;
+    border-radius: 5px;
+    -webkit-box-shadow: inset(#ccc);
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+textarea{
+    display: block;
+    width: 310px;
+    height: 96px;
+    margin: 11px auto;
+    padding: 8px 0 0 20px;
+    border: 2px solid #16B5E8;
+    border-radius: 5px;
+    -webkit-box-shadow: inset(#ccc);
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+.butt{
+    width: 300px;
+    margin: 55px auto 20px auto;
+}
+
+.b-popup .button-popup{
+    display: block;
+    max-width: 298px;
+    height: 46px;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'MyriadPro-Bold';
+    font-size: 22px;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: #0798c7;
+}
+.relative {
+    position:relative;
+    width:100%;
+}
+#result {
+    width: 280px;
+    padding:0 20px 0 0px;
+    transform:translate(0%, 0%);
+    font-size:18px;
+    color:#404040;
+    text-align:center;
+}
+.error{
+    color:#f00;
+    font-size:13px;
+}
+.neotpravleno {
+    color:#f00;
+    font-size:13px;
+}
+/* - stop form-popup - */
+/* stop modal*/
+/*-----------------------------------------------------------------------------------*/
+/*  2_Card_Product
+/*-----------------------------------------------------------------------------------*/
+.post-price{
+    width: auto;
+    min-height: 614px;
+    margin: 0 0 5px 0;
+    padding: 0 0 0 20px;
+    float: left;
+    border: 0px solid #787cfc;
+}
+/*-----*/
+.page-title-map{
+    padding: 0 0 4px 20px;
+    float: left;
+}
+.page-title-map a{
+    display: inline-block;
+    font-family: 'PhilosopherItalic';
+    font-size: 14px;
+    color: #25aae2;
+}
+.page-title-map a:hover{
+    text-decoration: underline;
+}
+.page-title-map .active-post{
+    color: #6e6e6e;
+}
+.page-title-map span{
+    padding: 0 5px;
+    font-size: 16px;
+}
+/*-- post-gallery ---*/
+.post-gallery{
+    width: 460px;
+    padding: 5px 0 0 0;
+    float: left;
+}
+#carousel {
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid #0e76bb;
+}
+#carousel .slides > li {
+    margin: 0 5px;
+    padding: 0 0 2px 0;
+}
+#carousel .slides > li:first-child{
+    margin-left: 0;
+}
+#carousel .slides > li:last-child{
+    margin-right: 0;
+}
+#carousel .flex-active-slide{
+    border-bottom: 2px solid #0e76bb;
+}
+/*-- price-desc-post ---*/
+.price-desc-post{
+    width: 460px;
+    height: 100%;
+    padding: 4px 0 0 17px;
+    letter-spacing: 1px;
+    border: 0px solid red;
+    float: left;
+}
+.price-desc-post h2{
+    text-transform: capitalize;
+    letter-spacing: 2.6px;
+    font-family: 'PhilosopherRegular';
+    font-size: 26px;    
+}
+.price-desc{
+    overflow: hidden;
+    width: 300px;
+    padding: 21px 0;    
+}
+.price-desc li{
+    height: 24px;
+}
+.price-desc span{
+    font-size: 18px;
+    color: #25282a;
+}
+.desc-name{
+    float: left;
+}
+.desc-condition{
+    float: right;
+}
+.stock{
+    display: block;
+    font-size: 18px;
+    color: #d53b30;
+}
+.stock span{
+    text-decoration: line-through;
+}
+.amount{
+    position: relative;
+    width: 191px;
+    margin: 15px 0 0 0;
+    font-size: 18px;
+    color: #25282a;
+}
+.amount label{
+    padding: 7px 0 0 0;
+}
+.amount input.numb{
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    margin: 0 0 0 25px;
+    text-align: center;
+    background: url(images/content/amount-span-bg.png) no-repeat;
+    border: none;
+    outline: none;
+}
+.amount-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url(images/content/amount-top-bg.png) no-repeat;
+}
+.amount-bottom{
+    position: absolute;
+    top: 16px;
+    right: 0;
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background: url(images/content/amount-bottom-bg.png) no-repeat;
+}
+.total-cost{
+    padding: 15px 0 12px 0;
+    font-size: 24px;
+    color: #0e76bb;
+}
+.total-cost span{
+    display: inline-block;
+    padding: 0 0 0 15px;
+    font-size: 36px;
+}
+.btn a{
+    display: table-cell;
+    vertical-align: middle;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    background: url(images/content/btn-bg.png) no-repeat;
+}
+.btn a:hover{
+    opacity: 0.7;
+}
+.btn span{
+    display: table-cell;
+    width: 20px;
+}
+.share-social{
+    display: block;
+    width: 205px;
+    height: 19px;
+    margin: 202px 0 0 0;
+    background: url(images/content/share-social-bg.jpg) no-repeat;
+}
+.share-social:hover{
+    opacity: 0.7;
+}
+/*-----------------------------------------------------------------------------------*/
+/*  3_Card_basket
+/*-----------------------------------------------------------------------------------*/
+.cart-content{
+    width: 79%;
+    padding: 4px 0 0 20px;
+    letter-spacing: 1px;
+    float: left;
+}
+.cart-content h2{
+    margin: 6px 0 8px 0;
+    font-family: 'PhilosopherRegular';
+    letter-spacing: 0px;
+    border-bottom: 1px solid #0e76bb;
+}
+.cart-content h2 span{
+    display: inline-block;
+    padding: 3px 0 0px 0;
+    border-bottom: 2px solid #0e76bb;
+}
+.cart-list{
+    height: 142px;
+    padding: 10px 0;
+    border-bottom: 1px solid #c8c8c8;
+}
+.cart-list img, .cart-list li{
+    float: left;
+    color: #373636;
+}
+.list-name{
+    width: 320px;
+    padding: 0 0 0 15px;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+.list-price{
+    width: 265px;
+}
+.list-p{    
+    font-size: 24px;
+    line-height: 27px;
+    color: #0e76bb;
+}
+.list-p span{
+    font-family: 'PhilosopherBold';
+    font-size: 36px;
+}
+.cart-list .amount{
+    width: auto;
+    margin: 0;
+}
+.cart-list .amount .numb{
+    margin: 0;
+}
+.list-amount{
+    position: relative;
+    margin: 11px 0 0 0;
+}
+.list-amount .amount-top{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url(images/content/amount-top-bg.png) no-repeat;
+}
+.list-amount .amount-bottom{
+    position: absolute;
+    top: 16px;
+    left: 30px;
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url(images/content/amount-bottom-bg.png) no-repeat;
+}
+.delete a{
+    display: table-cell;
+    vertical-align: middle;
+    height: 120px;
+    padding: 0px 0 0 24px;
+    text-align: center;
+    text-decoration: underline;
+    background: url(images/content/delete-bg.png) 0 50px no-repeat;
+}
+.delete a:hover{
+    text-decoration: none;
+}
+.cart-content .total-cost{
+    padding: 19px 0 0px 0;
+    letter-spacing: 0px;
+    float: right;
+}
+.checkout{
+    margin: 10px 0 0 200px;
+}
+.checkout a{
+    display: table-cell;
+    vertical-align: middle;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    background: url(images/content/btn-bg.png) no-repeat;    
+}
+/*-----------------------------------------------------------------------------------*/
+/*  4_Personal_office
+/*-----------------------------------------------------------------------------------*/
+.personal-office {
+    width: 79%;
+    padding: 4px 0 0 20px;
+    letter-spacing: 1px;
+    float: left;
+}
+.personal-office  h2{
+    margin: 6px 0 8px 0;
+    font-family: 'PhilosopherRegular';
+    letter-spacing: 0px;
+    border-bottom: 1px solid #0e76bb;
+}
+.personal-office  h2 span{
+    display: inline-block;
+    padding: 3px 0 0px 0;
+    border-bottom: 2px solid #0e76bb;
+}
+.personal-office-address{
+    width: 480px;
+    padding: 10px 0 0 0;
+    font-size: 16px
+}
+.personal-office-address h3{
+    padding: 0 0 12px 0;
+    letter-spacing: 3px;
+    font-family: 'PhilosopherRegular';
+    font-size: 26px;
+    color: #373636;
+}
+.personal-office-address h4{
+    font-family: 'PhilosopherBold';
+}
+.add-delivery{
+    padding: 6px 0 13px 0;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+}
+.delivery-editor{
+    text-decoration: underline;
+    color: #0e76bb;
+}
+.delivery-editor:hover{
+    text-decoration: none;
+}
+.my-orders{
+    padding: 35px 0 0 0;
+}
+.my-orders a{
+    display: inline-block;
+    padding: 20px 0 12px 15px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0e76bb;
+}
+.my-orders .finished{
+    padding: 0 0 0 52px;
+    text-decoration: none;
+}
+.my-orders a:hover{
+    text-decoration: none;
+}
+.orders-num{
+    height: 132px;
+    margin: 0 0 9px 0;
+    padding: 22px 19px 26px 18px;
+    font-size: 18px;
+    border: 1px solid #0e76bb;
+    border-left: none;
+}
+.orders-num h5{
+    padding-bottom: 22px;
+    font-family: 'PhilosopherBold';
+    font-size: 20px;    
+}
+.orders-num li{
+    height: 24px;
+}
