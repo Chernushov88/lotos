@@ -78,6 +78,7 @@ a{
     color: #373636;
 }
 .desktop-hidden {display: none;}
+.tablet-visible {display: none;}
 .mobile-visible {display: none;}
 .clear {clear: both;}
 /* ------------------------------  start header ------------------------------ */
@@ -310,7 +311,7 @@ form.search input[type=submit]{
     float: left;
     border: 0px solid #6cc6ff;
 }
-.slider {max-width: 638px; max-height: 219px; margin: 0 auto;}
+.content .slider {max-width: 638px; max-height: 219px; margin: 0 auto;}
 .bxslider li h2{
     position: absolute;
     top: 21px;
@@ -368,20 +369,6 @@ form.search input[type=submit]{
     color: #fff;
     background-size: 100% 100%;
 }
-.thumbnail a span{
-    position: absolute;
-    top: 20px;
-}
-.thumbnail a img{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    height: 80px;
-}
-
-
-
 /*-----*/
 .content-text{
     padding: 0px 11px 0 8px;
@@ -747,12 +734,13 @@ textarea{
 }
 .page-title-map a{
     display: inline-block;
+    text-decoration: underline;
     font-family: 'PhilosopherItalic';
     font-size: 14px;
     color: #25aae2;
 }
 .page-title-map a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 .page-title-map .active-post{
     color: #6e6e6e;
@@ -841,7 +829,10 @@ textarea{
     height: 31px;
     margin: 0 0 0 25px;
     text-align: center;
-    background: url(images/content/amount-span-bg.png) no-repeat;
+    background: #fff;
+    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.2)inset;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     border: none;
     outline: none;
 }
@@ -982,10 +973,10 @@ textarea{
     display: table-cell;
     vertical-align: middle;
     height: 120px;
-    padding: 0px 0 0 24px;
+    padding: 2px 0 2px 24px;
     text-align: center;
     text-decoration: underline;
-    background: url(images/content/delete-bg.png) 0 50px no-repeat;
+    background: url(images/content/delete-bg.png) 0 center no-repeat;
 }
 .delete a:hover{
     text-decoration: none;
@@ -1064,6 +1055,7 @@ textarea{
     padding: 20px 0 12px 15px;
     cursor: pointer;
     text-decoration: underline;
+    font-family: 'PhilosopherBold';
     color: #0e76bb;
 }
 .my-orders .finished{
@@ -1079,7 +1071,6 @@ textarea{
     padding: 22px 19px 26px 18px;
     font-size: 18px;
     border: 1px solid #0e76bb;
-    border-left: none;
 }
 .orders-num h5{
     padding-bottom: 22px;

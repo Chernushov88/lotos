@@ -20,33 +20,41 @@
 		<header>
 			<nav class="nav-header"> 
 				<div class="nav-header-inside">
-				<ul class="nav-header-left">
-					<li><a href="">Прайс</a></li>
-					<li><a href="">Контакты</a></li>
-					<li><a href="">Доставка</a></li>
-				</ul>
-				<div class="nav-header-right">
-					<ul class="login">
-						<li><a href="">Вход /</a></li>
-						<li><a href="">Регистрация</a></li>	
+					<a href="#" id="touch-menu"></a>
+					<ul class="nav-header-left">
+						<li><a href="">Прайс</a></li>
+						<li><a href="">Контакты</a></li>
+						<li><a href="">Доставка</a></li>
 					</ul>
-					<ul class="cart">
-						<li><a href="">Корзина:</a></li>
-						<li><a href="">пока пусто</a></li>
-					</ul>
-				</div>
-
+					<div class="nav-header-right ">
+						<ul class="login mobile-hidden">
+							<li><a href="">Вход&emsp;/</a></li>
+							<li><a href="">Регистрация</a></li>	
+						</ul>
+						<ul class="cart">
+							<li><a href=""><span class="mobile-hidden">Корзина:</span></a></li>
+							<li class="mobile-hidden"><a href="">пока пусто</a></li>
+						</ul>
+						<ul class="login mobile-visible">
+							<li><a href=""></a></li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 			<div class="header-inside">
 				<div class="logo">
 					<a href="">Интернет-магазин благовоний и сувениров</a>
 				</div>
+				<div class="contacts mobile-visible contacts-mobile">
+					<ul>
+						<li class="phone"><a href="">+7 (495) 123-45-67</a></li>						
+					</ul>
+				</div>
 				<form class="search" action="">
 					<input type="text" placeholder="Поиск">	
 					<input type="submit" name="" value=" ">
 				</form>				
-				<div class="contacts">
+				<div class="contacts mobile-hidden">
 					<ul>
 						<li class="phone"><a href="">Тел.: +7 (495) 123-45-67</a></li>
 						<li class="email"><a href="">E-mail: info@blue-lotos.ru</a></li>
@@ -58,54 +66,56 @@
 		<!-- stop header -->
 		<!-- start main -->
 		<main>
-			<section class="main-inside">
+			<section class="main-inside index-html">
 				<!-- start sidebar-left -->
 				<aside class="sidebar-left">
-					<h2>Каталог</h2>
-					<h3><span>Индия</span></h3>
-					<ul>
-						<li><a href="">Благовония</a></li>
-						<li><a href="">Эфирные масла</a></li>
-						<li><a href="">Аюрведа косметика</a></li>
-						<li><a href="">Аюрведа препараты</a></li>
-					</ul>
-					<h3><span>Китай</span></h3>
-					<ul>
-						<li><a href="">Продукты питания</a></li>
-						<li><a href="">Чай, матэ, кофе</a></li>
-						<li><a href="">Посуда, чайная утварь</a></li>
-						<li><a href="">Таро, руны, камни</a></li>
-						<li><a href="">Предметы интерьера</a></li>
-					</ul>
-					<h3><span>Непал</span></h3>
-					<ul>
-						<li><a href="">Статуи, маски</a></li>
-						<li><a href="">Хна для тату, Украшения</a></li>
-						<li><a href="">Книги, CD, DVD,</a></li>
-						<li><a href="">Подарочная упаковка</a></li>
-					</ul>
-					<h3><span>Тайланд</span></h3>
-					<ul>
-						<li><a href="">Благовония</a></li>
-						<li><a href="">Эфирные масла</a></li>
-						<li><a href="">Аюрведа косметика</a></li>
-						<li><a href="">Аюрведа препараты</a></li>
-					</ul>
-					<h3><span>Индонезия</span></h3>
-					<ul>
-						<li><a href="">Продукты питания</a></li>
-						<li><a href="">Чай, матэ, кофе</a></li>
-						<li><a href="">Посуда, чайная утварь</a></li>
-						<li><a href="">Таро, руны, камни</a></li>
-						<li><a href="">Предметы интерьера</a></li>
-					</ul>
-					<h3><span>Россия</span></h3>
-					<ul>
-						<li><a href="">Статуи, маски</a></li>
-						<li><a href="">Хна для тату, Украшения</a></li>
-						<li><a href="">Книги, CD, DVD,</a></li>
-						<li><a href="">Подарочная упаковка</a></li>
-					</ul>
+					<h2 id="touch-catalog">Каталог</h2>
+					<div class="mobile-catalog">
+						<h3><span>Индия</span></h3>
+						<ul>
+							<li><a href="">Благовония</a></li>
+							<li><a href="">Эфирные масла</a></li>
+							<li><a href="">Аюрведа косметика</a></li>
+							<li><a href="">Аюрведа препараты</a></li>
+						</ul>
+						<h3><span>Китай</span></h3>
+						<ul>
+							<li><a href="">Продукты питания</a></li>
+							<li><a href="">Чай, матэ, кофе</a></li>
+							<li><a href="">Посуда<span class="desktop-visible">, чайная утварь</span></a></li>
+							<li><a href="">Таро, руны, камни</a></li>
+							<li><a href="">Предметы интерьера</a></li>
+						</ul>
+						<h3><span>Непал</span></h3>
+						<ul>
+							<li><a href="">Статуи, маски</a></li>
+							<li><a href="">Хна для тату<span class="desktop-visible">, Украшения</span></a></li>
+							<li><a href="">Книги, CD, DVD,</a></li>
+							<li><a href="">Подарочная упаковка</a></li>
+						</ul>
+						<h3><span>Тайланд</span></h3>
+						<ul>
+							<li><a href="">Благовония</a></li>
+							<li><a href="">Эфирные масла</a></li>
+							<li><a href="">Аюрведа косметика</a></li>
+							<li><a href="">Аюрведа препараты</a></li>
+						</ul>
+						<h3><span>Индонезия</span></h3>
+						<ul>
+							<li><a href="">Продукты питания</a></li>
+							<li><a href="">Чай, матэ, кофе</a></li>
+							<li><a href="">Посуда<span class="desktop-visible">, чайная утварь</span></a></li>
+							<li><a href="">Таро, руны, камни</a></li>
+							<li><a href="">Предметы интерьера</a></li>
+						</ul>
+						<h3><span>Россия</span></h3>
+						<ul>
+							<li><a href="">Статуи, маски</a></li>
+							<li><a href="">Хна для тату<span class="desktop-visible">, Украшения</span></a></li>
+							<li><a href="">Книги, CD, DVD,</a></li>
+							<li><a href="">Подарочная упаковка</a></li>
+						</ul>
+					</div>
 				</aside>
 				<!-- stop sidebar-left -->
 				<div class="page-title-map">
@@ -220,7 +230,7 @@
 		<!-- start footer -->
 		<footer>
 			<!-- start nav-footer -->
-			<nav class="nav-footer">
+			<nav class="nav-footer ">
 				<ul class="nav-footer-inside">
 					<li><a href="">Прайс</a></li>
 					<li><a href="">Контакты</a></li>
@@ -229,19 +239,31 @@
 				</ul>
 			</nav>	
 			<!-- stop nav-footer -->
-			<!-- start footer -->
+			<!-- start footer-inside -->
 			<div class="footer-inside">
-				<ul class="social">
+				<div class="footer-contacts mobile-visible">
+					<ul>
+						<li class="footer-phone"><a href="">Тел.: +7 (495) 123-45-67</a></li>
+						<li class="footer-email"><a href="">E-mail: info@blue-lotos.ru</a></li>
+					</ul>
+					<a class="callback" href="javascript:PopUpShow()">Заказать обратныий звонок</a>
+				</div>
+				<ul class="social desktop-visible social-mobile" >
 					<li><a href=""></a></li>
 					<li><a href=""></a></li>
 					<li><a href=""></a></li>
 				</ul>
 				<div class="logo-footer">
-					<a href="">Интернет-магазин благовоний и сувениров</a>
-					<p>2016 © bluelotos.ru   Любое копирование запрещено без разрешения администрации.</p>
+					<a class="logo-a-footer" href=""><span class="mobile-hidden">Интернет-магазин благовоний и сувениров</span></a>
+					<ul class="social desktop-hidden">
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+					<p>2016 © bluelotos.ru <span class="contacts-mobile"><br></span> Любое копирование запрещено без разрешения администрации.</p>
 				</div>
 								
-				<div class="footer-contacts">
+				<div class="footer-contacts mobile-hidden">
 					<ul>
 						<li class="footer-phone"><a href="">Тел.: +7 (495) 123-45-67</a></li>
 						<li class="footer-email"><a href="">E-mail: info@blue-lotos.ru</a></li>
@@ -249,7 +271,7 @@
 					<a class="callback" href="javascript:PopUpShow()">Заказать обратныий звонок</a>
 				</div>
 			</div>
-			<!-- stop footer -->			
+			<!-- stop footer-inside -->			
 		</footer>
 		<!-- stop footer -->
 
@@ -278,7 +300,7 @@
 			</div>
 			<div class="darken"></div>		
 			<!-- Stop modal -->
-			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="js/myscript.js" type="text/javascript"></script>
 	</body>
 </html>
