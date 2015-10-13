@@ -1,5 +1,6 @@
 ﻿@media (min-width:768px) and (max-width:1204px){ 
 	.desktop-hidden {display: block !important;}
+	.desktop-visible {display: none;}
 	/* header */
 	nav.nav-header {font-size: 16px; background: url(../images/header/nav-repeat-tablet.png) center 0 repeat-x;}
 	.nav-header .nav-header-inside {width: 721px; background: url(../images/header/nav-header-tablet.png) center 0 no-repeat;}
@@ -48,14 +49,7 @@
 	.content .thumbnail li {padding-top: 10px;}
 	.content .thumbnail li:nth-child(2n+2) {padding-left: 14px;}
 	.content .thumbnail a{width: 261px; height: 69px; font-size: 22.6px;}
-	.thumbnail a.india{background: url(../images/content/india-tablet.jpg);}
-	.thumbnail a.china{background: url(../images/content/china-tablet.jpg);}
-	.thumbnail a.indonezia{background: url(../images/content/indonezia-tablet.jpg);}
-	.thumbnail a.nepal{background: url(../images/content/nepal-tablet.jpg);}
-	.thumbnail a.tailand{background: url(../images/content/tailand-tablet.jpg);}
-	.thumbnail a.russia{background: url(../images/content/russia-tablet.jpg);}
 
-	.desktop-visible {display: none;}
 	.content .sidebar-right {overflow: hidden; width: 100%; padding: 14px 0 0 0; float: none;}
 	.sidebar-right .sidebar-1, .sidebar-right .sidebar-2, .sidebar-right .sidebar-3 {width: 169px; margin: 0 0 14px 0; float: left;}
 	.sidebar-2 {padding: 0 14px;}
@@ -91,21 +85,115 @@
 	.footer-contacts .footer-email a{    background: url(../images/header/email-bg-tablet.png) 5px 10px no-repeat;}
 	.footer-inside .callback {width: 211px; height: 10px; margin: 9px 0 0 0; padding: 11px 0 11px 22px; font-size: 12px; background: url(../images/header/feedback-bg-tablet.png) 0px 0px no-repeat;}
 
+}
+/*----------------------------------------------*/
+@media (min-width:320px) and (max-width:767px){ 
+	.desktop-hidden {display: block;}
+	.desktop-visible {display: none;}
+	.mobile-hidden {display: none;}
+	.mobile-visible{display: block !important;}
+	div.contacts-mobile {display: inline-block !important;}
 
+	nav.nav-header {height: 65px; background: url(../images/header/nav-repeat-mobile.png) center 0 repeat-x;}
+	.nav-header .nav-header-inside {position: relative; background: none;}
+ 	.nav-header #touch-menu {display: inline-block; width: 33px; height: 28px; padding: 12px; background: url(../images/header/mobile-menu-bg.png) center center no-repeat;}
+	.nav-header-left {display: none; width: 100%;}
+	header .nav-header .nav-header-left li {border: none; margin: 0; padding: 0; float: none;}
+	.nav-header .nav-header-left li a {display: block; height: 15px; padding: 10px 15px; font-size: 16px; border-left: 5px solid transparent; border-bottom: 1px solid #1a4160; background: #fffcfc; color: #0f1d2c;}
+	.nav-header .nav-header-left li:last-child a {border-bottom: none;}
+    .nav-header .nav-header-left li a:hover {background: #f0f0f0; color: #444; border-left: 5px solid #0e76bb;}
 
+	.nav-header-right {position: absolute; top: 0px; right: 0;}
+	.nav-header .cart, .nav-header .login {width: auto;}
+	.nav-header .login li:first-child a {padding: 0 0px 0 42px; background: url(../images/header/user-bg-mobile.png) 5px 7px no-repeat;}
+	.nav-header .cart li:first-child a {background: url(../images/header/cart-bg-mobile.png) 16px 13px no-repeat;}
 
+	div.header-inside {overflow: visible; border: none;}
+	.header-inside .logo {width: 100%;}
+	.header-inside .logo a {padding: 79px 39px 0px 39px; text-align: center; font-size: 19px; background: url(../images/header/logo-mobile.png) center 13px no-repeat; border: none;}
+	.header-inside .contacts {width: 100%; text-align: center; float: none;}
+	.header-inside .contacts li {display: inline-block;}
+	.header-inside .contacts li a {padding: 17px 0 0 61px; letter-spacing: .5px; font-size: 33px;}
+	.header-inside .phone {background: url(../images/header/phone-bg-mobile.png) 0px 15px no-repeat;}
 
+	.header-inside form.search {display: block; width: 87%; padding: 26px 0 0 0; margin: 0 auto; float: none;}
+	.header-inside form.search input[type=text] {width: 82%; padding: 0 38px 0 20px; font-size: 19px;}
+	.header-inside form.search ::-webkit-input-placeholder {font-size: 19px;}
+	.header-inside form.search :-moz-placeholder {font-size: 19px;}
+	.header-inside form.search ::-moz-placeholder {font-size: 19px;}
+	.header-inside form.search :-ms-input-placeholder {font-size: 19px;}
+	.header-inside form.search input[type=submit] {right: 4%;}
 
+	/*.sidebar-lef*/
+	section.main-inside {padding: 17px 0 35px 0;}
+	.main-inside .sidebar-left {width: 100%; padding: 0 0 20px 0;}
+	#touch-catalog {width: 88%; margin: 0 auto; padding: 8px 0; cursor: pointer; text-align: center; letter-spacing: 7px; font-size: 26px; color: #fff; background: #0e76bb; border-radius: 10px;}
+	.mobile-catalog {display: none; padding: 0 0 0 20px;}
+	
+	/*content*/
+	.main-inside  .content {width: 95%;}
+	.slider .bxslider li h2 {top: 18%; left: 13%; font-size: 15.7px;}
+	.slider .bxslider li span {top: 44%; left: 13%; font-size: 10.5px;}
+	.slider .bxslider li a {top: 69%; left: 13%; width: 72px; padding: 5px 0px; letter-spacing: 0px; font-size: 10px; color: #534e46;}
+	.slider .bx-wrapper {margin: 0;}
+
+	.content .thumbnail {
+    max-width: 360px;
+    margin: 0 auto;}
+	.content .thumbnail li:nth-child(2n+2) {padding-left: 0px;}
+	.content .thumbnail a {width: 360px; height: 96px; font-size: 31.3px;}
+	
+	aside.sidebar-right {display: none;}
+	.nav-footer {display: none;}
+	
+	/*footer*/
+	.social-mobile {display: block;}
+	div.footer-contacts {text-align: center; float: none;}
+	.footer-contacts ul {display: inline-block; margin: 0 auto;}
+	a.callback {display: inline-block; margin: 11px 42px 0;}
+.footer-inside .social {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    float: none;}
+    .footer-inside a.logo-a-footer {display: inline-block; width: 111px; height: 73px; padding: 0; background: url(../images/footer/logo-footer-mobile.png) center 0px no-repeat; float: left;}
+
+.social-mobile {display: table;}
+.footer-inside .logo-footer {
+    display: tablet;
+    width: 360px;
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+}
 
 }
 
 
-/*----------------------------------------------*/
 
 
-@media (min-width:320px) and (max-width:767px){ 
 
- 
+
+@media (min-width:320px) and (max-width:359px){
+	.header-inside div.logo a {padding: 82px 29px 0px 29px; background: url(../images/header/logo-tablet.png) center 25px no-repeat}
+}
+
+@media (min-width:470px) and (max-width:559px){
+	.header-inside form.search input[type=text] {width: 84%;}
+
+}
+@media (min-width:560px) and (max-width:659px){
+	.header-inside form.search input[type=text] {width: 87%;}
+}
+@media (min-width:650px) and (max-width:767px){
+	.header-inside form.search input[type=text] {width: 89%;}
+}
+@media (min-width:629px) and (max-width:767px){
+	.footer-contacts a.callback {margin: 11px 62px 0;}
+}
+
+
+
 }
 
 

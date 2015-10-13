@@ -56,7 +56,6 @@
 	font-family: Arial;
 	font-weight: bold;
 	color: #666;
-	padding-top: 20px;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -191,14 +190,42 @@
 	background: url(../images/content/bg_direction_nav-tablet.png) no-repeat -36px 0px;
 }
 
-.slider .bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
-}
 
 .slider .bx-wrapper .bx-controls-direction a {
 	top: 51%;
 	width: 35px;
 	height: 35px;}
+}
 
+@media (min-width:320px) and (max-width:767px){
+.slider .bx-wrapper .bx-prev {
+	left: 3px;
+	background: url(../images/content/bg_direction_nav-mobile.png) no-repeat 1px 0px;
+}
+
+.slider .bx-wrapper .bx-next {
+	right: 3px;
+	background: url(../images/content/bg_direction_nav-mobile.png) no-repeat -23px 0px;
+}
+.bx-wrapper .bx-controls-direction a {
+	top: 55.5%;
+	margin-top: -19px;
+	outline: 0;
+	width: 23px;
+	height: 23px;
+}
+
+
+.slider .bx-wrapper .bx-pager.bx-default-pager a {
+	background: url(../images/content/bg_control_nav-mobile.png) 0px 0px no-repeat;
+
+}
+.slider .bx-wrapper .bx-pager.bx-default-pager a:hover, .slider .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: url(../images/content/bg_control_nav-mobile.png) 0px -12px no-repeat;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	top: 51%;
+	width: 11px;
+	height: 10px;}
 
 }

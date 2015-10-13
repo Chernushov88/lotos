@@ -78,9 +78,8 @@ a{
     color: #373636;
 }
 .desktop-hidden {display: none;}
-.clear{
-    clear: both;
-}
+.mobile-visible {display: none;}
+.clear {clear: both;}
 /* ------------------------------  start header ------------------------------ */
 header{
     width: 100%;
@@ -120,6 +119,8 @@ header{
 .nav-header-left li a:hover{
     color: #f2be6d;
 }
+/*--- mobile-menu*/
+#touch-menu {display: none;}
 /*-----*/
 .nav-header-right{
     float: right;
@@ -309,7 +310,7 @@ form.search input[type=submit]{
     float: left;
     border: 0px solid #6cc6ff;
 }
-.slider {max-width: 638px; height: 219px; margin: 0 auto;}
+.slider {max-width: 638px; max-height: 219px; margin: 0 auto;}
 .bxslider li h2{
     position: absolute;
     top: 21px;
@@ -355,6 +356,7 @@ form.search input[type=submit]{
     padding-left: 17px;
 }
 .thumbnail a{
+    position: relative;
     display: table-cell;
     vertical-align: middle;
     width: 300px;
@@ -364,25 +366,22 @@ form.search input[type=submit]{
     text-decoration: none;
     font-size: 26px;
     color: #fff;
+    background-size: 100% 100%;
 }
-a.india{
-    background: url(images/content/india.jpg);
+.thumbnail a span{
+    position: absolute;
+    top: 20px;
 }
-a.china{
-    background: url(images/content/china.jpg);
+.thumbnail a img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 80px;
 }
-a.indonezia{
-    background: url(images/content/indonezia.jpg);
-}
-a.nepal{
-    background: url(images/content/nepal.jpg);
-}
-a.tailand{
-    background: url(images/content/tailand.jpg);
-}
-a.russia{
-    background: url(images/content/russia.jpg);
-}
+
+
+
 /*-----*/
 .content-text{
     padding: 0px 11px 0 8px;
