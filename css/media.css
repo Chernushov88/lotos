@@ -1,4 +1,5 @@
-﻿@media (min-width:768px) and (max-width:1204px){ 
+﻿/*.post-price #carousel .slides li{max-width: 107px;}*/
+@media (min-width:768px) and (max-width:1204px){ 
 	.desktop-hidden {display: block !important;}
 	.desktop-visible {display: none;}
 	.contacts-mobile {display: none;}
@@ -97,7 +98,7 @@
 
 	.post-price .price-desc-post {width: 231px;}
 	.post-gallery .slides {max-height: 350px;}
-	.post-price #carousel .slides li{max-width: 61px !important; padding: 0 0 8px 0;}
+	.post-price #carousel .slides li{/*max-width: 61px; */padding: 0 0 8px 0;}
 
 	/*.price-desc-post*/	
 	.post-price .price-desc-post h2 {padding: 1px 0 10px 0; line-height: 29px; font-size: 23px;}

@@ -334,7 +334,18 @@
   <script defer src="js/jquery.flexslider.js"></script>
 
   <script type="text/javascript">
+
    $(window).load(function() {
+   	// var liMini = $('.slides li').css('width');
+   	// alert (liMini);
+   	var liMini;
+var w = $(window).width();
+if ( w > 1204) {
+	liMini = 107;
+    } 
+    else if (w < 1204) {
+       liMini = 61;
+    }
   // The slider being synced must be initialized first
 
   $('#carousel').flexslider({
@@ -342,7 +353,7 @@
     controlNav: false,
     animationLoop: false,
     slideshow: false,
-    itemWidth: 107,
+    itemWidth: liMini,
     itemMargin: 4,
     asNavFor: '#slider'
   });
