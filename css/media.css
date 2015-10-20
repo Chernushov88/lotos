@@ -125,6 +125,7 @@
 	ul.cart-list .list-p {padding: 7px 0 14px 0; line-height: 19px; font-size: 16px;}
 	ul.cart-list .list-p span {font-size: 22px;}
 	.delete {margin: 0 0 0 19px;}
+	.buy {margin: 0 0 0 10px;}
 	.cart-content .total-cost {text-align: right; font-size: 18px;}
 	.cart-content .total-cost span {font-size: 24px;}
 	.total-cost .checkout {margin: 16px 0 0 200px;}
@@ -288,7 +289,11 @@
 	.personal-office .personal-office-address {width: 100%; padding: 10px 0 22px 0;}
 	div.orders-num {height: auto; margin: 0 0 9px 0; padding: 12px 11px 15px 11px; border: 1px solid #0e76bb;}
 	div.orders-num h5 {padding-bottom: 18px; line-height: 29px;}
-	
+ /*-----------------------------------------------------------------------------------*/
+/*  5_product_list
+/*-----------------------------------------------------------------------------------*/	
+	.cart-list li.buy {width: auto !important; margin: 5px 20% 0 10px; float: left;}
+	li.buy a { height: 26px; padding: 14px 0 0 0; font-size: 14px; float: right;}
 
 }
 

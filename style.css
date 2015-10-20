@@ -981,6 +981,20 @@ textarea{
 .delete a:hover{
     text-decoration: none;
 }
+.buy a{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100px;
+    height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    background: url(images/content/btn-buy-bg.png) 0 center no-repeat;
+}
+.buy a:hover{
+    opacity: 0.8;
+}
 .cart-content .total-cost{
     padding: 19px 0 0px 0;
     letter-spacing: 0px;
