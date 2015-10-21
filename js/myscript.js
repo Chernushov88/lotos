@@ -37,17 +37,12 @@ $(document).ready(function(){
 /*-----------------------------------------------------------------------------------*/
 /*  PopUp
 /*-----------------------------------------------------------------------------------*/
-//Функция отображения PopUp
-function PopUpShow(){
-    $(".darken").fadeIn();
-    $("#popup2").fadeIn();
-}
+			//Функция отображения PopUp
+function PopUpShow(){$(".darken").fadeIn(); $("#popup").fadeIn();}
+function PopUpShow2(){$(".darken").fadeIn(); $("#popup2").fadeIn();}
         
     //Функция скрытия PopUp
-function PopUpHide(){
-    $(".darken").fadeOut(300);
-    $("#popup2").fadeOut(300);
-}
+function PopUpHide(){$(".darken").fadeOut(300); $("#popup, #popup2").fadeOut(300);}
 /*-----------------------------------------------------------------------------------*/
 /*	responsive slider
 /*-----------------------------------------------------------------------------------*/

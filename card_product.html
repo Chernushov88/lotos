@@ -188,7 +188,7 @@
 						</div>	
 						<div class="tablet-hidden">					
 							<div class="btn">
-								<a href="">купить сейчас</a>
+								<a href="javascript:PopUpShow2()">купить сейчас</a>
 								<span></span>
 								<a href="">добавить в корзину</a>
 							</div>						
@@ -197,7 +197,7 @@
 					</div>
 					<div class="tablet-visible">					
 						<div class="btn">
-							<a href="">купить сейчас</a>
+							<a href="javascript:PopUpShow2()">купить сейчас</a>
 							<span></span>
 							<a href="">добавить в корзину</a>
 						</div>						
@@ -299,7 +299,7 @@
 		<!-- stop footer -->
 
 		<!-- Start modal -->
-			<div class="b-popup" id="popup2">
+			<div class="b-popup" id="popup">
 				<a class="closik" href="javascript:PopUpHide()">X</a>
 				<h3>Заказать звонок</h3>				
 				<form id="myform" class="form_one_two rf" action="javascript:send('forma.php','myform','result');" method="post">
@@ -321,6 +321,28 @@
 				   
 				</form>		
 			</div>
+			<div class="b-popup" id="popup2">
+			<a class="closik" href="javascript:PopUpHide()">X</a>
+			<h3>Купить</h3>				
+			<form id="myform2" class="form_one_two rf" action="javascript:send('forma.php','myform2','result2');" method="post">
+
+			    <input name="fio" type="text" class="fio" placeholder="ФИО">
+			     
+			    <input name="email" type="email" class="email-input" placeholder="E-mail">
+
+			    <input name="phone" type="phone" id="phone" class="telefon" placeholder="Телефон">
+			    
+			    <textarea name="descr" type="text" class="messege" placeholder="Описание"></textarea>				       
+				
+			    <div class="relative">
+					<div class="" onClick="chDiv()">
+						<input class="button-popup button-2 btn_submit" type="submit" onclick="send('myform','result2');" onclick="document.getElementById('myForm2').submit(); clean()" value='Купить'>
+					</div>
+					<div id="result2"></div>
+				</div>
+			   
+			</form>		
+		</div>
 			<div class="darken"></div>		
 			<!-- Stop modal -->
 
