@@ -40,9 +40,10 @@ $(document).ready(function(){
 			//Функция отображения PopUp
 function PopUpShow(){$(".darken").fadeIn(); $("#popup").fadeIn();}
 function PopUpShow2(){$(".darken").fadeIn(); $("#popup2").fadeIn();}
+function PopUpShow3(){$(".darken").fadeIn(); $("#popup3").fadeIn();}
         
     //Функция скрытия PopUp
-function PopUpHide(){$(".darken").fadeOut(300); $("#popup, #popup2").fadeOut(300);}
+function PopUpHide(){$(".darken").fadeOut(300); $("#popup, #popup2, #popup3").fadeOut(300); }
 /*-----------------------------------------------------------------------------------*/
 /*	responsive slider
 /*-----------------------------------------------------------------------------------*/

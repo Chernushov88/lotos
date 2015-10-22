@@ -215,7 +215,7 @@
 					<div class="total-cost">
 						Общая стоимость заказа:<span>15 190 руб.</span>
 						<div class="checkout">
-							<a href="">оформить заказ</a>
+							<a href="javascript:PopUpShow3()">оформить заказ</a>
 						</div>								
 					</div>
 					
@@ -246,7 +246,7 @@
 						<li class="footer-phone"><a href="">Тел.: +7 (495) 123-45-67</a></li>
 						<li class="footer-email"><a href="">E-mail: info@blue-lotos.ru</a></li>
 					</ul>
-					<a class="callback" href="javascript:PopUpShow()">Заказать обратныий звонок</a>
+					<a class="callback" href="">Заказать обратныий звонок</a>
 				</div>
 				<ul class="social desktop-visible social-mobile" >
 					<li><a href=""></a></li>
@@ -276,7 +276,7 @@
 		<!-- stop footer -->
 
 		<!-- Start modal -->
-			<div class="b-popup" id="popup2">
+			<div class="b-popup" id="popup">
 				<a class="closik" href="javascript:PopUpHide()">X</a>
 				<h3>Заказать звонок</h3>				
 				<form id="myform" class="form_one_two rf" action="javascript:send('forma.php','myform','result');" method="post">
@@ -296,6 +296,48 @@
 						<div id="result"></div>
 					</div>
 				   
+				</form>		
+			</div>
+			<div class="b-popup" id="popup2">
+				<a class="closik" href="javascript:PopUpHide()">X</a>
+				<h3>Купить</h3>				
+				<form id="myform2" class="form_one_two rf" action="javascript:send('forma.php','myform2','result2');" method="post">
+
+				    <input name="fio" type="text" class="fio" placeholder="ФИО">
+				     
+				    <input name="email" type="email" class="email-input" placeholder="E-mail">
+
+				    <input name="phone" type="phone" id="phone" class="telefon" placeholder="Телефон">
+				    
+				    <textarea name="descr" type="text" class="messege" placeholder="Описание"></textarea>				       
+					
+				    <div class="relative">
+						<div class="" onClick="chDiv()">
+							<input class="button-popup button-2 btn_submit" type="submit" onclick="send('myform','result2');" onclick="document.getElementById('myForm2').submit(); clean()" value='Купить'>
+						</div>
+						<div id="result2"></div>
+					</div>			   
+				</form>		
+			</div>
+			<div class="b-popup" id="popup3">
+				<a class="closik" href="javascript:PopUpHide()">X</a>
+				<h3>оформить заказ</h3>				
+				<form id="myform3" class="form_one_two rf" action="javascript:send('forma.php','myform3','result3');" method="post">
+
+				    <input name="fio" type="text" class="fio" placeholder="ФИО">
+				     
+				    <input name="email" type="email" class="email-input" placeholder="E-mail">
+
+				    <input name="phone" type="phone" id="phone" class="telefon" placeholder="Телефон">
+				    
+				    <textarea name="descr" type="text" class="messege" placeholder="Описание"></textarea>				       
+					
+				    <div class="relative">
+						<div class="" onClick="chDiv()">
+							<input class="button-popup button-2 btn_submit" type="submit" onclick="send('myform','result3');" onclick="document.getElementById('myForm3').submit(); clean()" value='ОФОРМИТЬ ЗАКАЗ'>
+						</div>
+						<div id="result3"></div>
+					</div>			   
 				</form>		
 			</div>
 			<div class="darken"></div>		

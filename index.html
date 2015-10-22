@@ -14,6 +14,9 @@
 			<link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
 			<script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js" data-text="Ваш браузер застарел, обновите свой браузер"></script>
 		<![endif]-->
+		<script>
+
+		</script>
 	</head>
 
 	<body>
@@ -256,7 +259,7 @@
 						<li class="footer-phone"><a href="">Тел.: +7 (495) 123-45-67</a></li>
 						<li class="footer-email"><a href="">E-mail: info@blue-lotos.ru</a></li>
 					</ul>
-					<a class="callback" href="javascript:PopUpShow()">Заказать обратныий звонок</a>
+					<a class="callback" href="javascript:PopUpShow2()">Заказать обратныий звонок</a>
 				</div>
 				<ul class="social desktop-visible social-mobile" >
 					<li><a href=""></a></li>
@@ -278,7 +281,7 @@
 						<li class="footer-phone"><a href="">Тел.: +7 (495) 123-45-67</a></li>
 						<li class="footer-email"><a href="">E-mail: info@blue-lotos.ru</a></li>
 					</ul>
-					<a class="callback" href="javascript:PopUpShow()">Заказать обратныий звонок</a>
+					<a class="callback" href="javascript:PopUpShow2()">Заказать обратныий звонок</a>
 				</div>
 			</div>
 			<!-- stop footer-inside -->			
@@ -286,7 +289,7 @@
 		<!-- stop footer -->
 
 		<!-- Start modal -->
-		<div class="b-popup" id="popup2">
+		<div class="b-popup" id="popup">
 			<a class="closik" href="javascript:PopUpHide()">X</a>
 			<h3>Заказать звонок</h3>				
 			<form id="myform" class="form_one_two rf" action="javascript:send('forma.php','myform','result');" method="post">
@@ -304,6 +307,28 @@
 						<input class="button-popup button btn_submit" type="submit" onclick="send('myform','result');" onclick="document.getElementById('myForm').submit(); clean()" value="Оставить заявку">
 					</div>
 					<div id="result"></div>
+				</div>
+			   
+			</form>		
+		</div>
+		<div class="b-popup" id="popup2">
+			<a class="closik" href="javascript:PopUpHide()">X</a>
+			<h3>Заказать звонок</h3>				
+			<form id="myform2" class="form_one_two rf" action="javascript:send('forma.php','myform2','result2');" method="post">
+
+			    <input name="fio" type="text" class="fio" placeholder="ФИО">
+			     
+			    <input name="email" type="email" class="email-input" placeholder="E-mail">
+
+			    <input name="phone" type="phone" id="phone" class="telefon" placeholder="Телефон">
+			    
+			    <textarea name="descr" type="text" class="messege" placeholder="Описание"></textarea>				       
+				
+			    <div class="relative">
+					<div class="" onClick="chDiv()">
+						<input class="button-popup button-2 btn_submit" type="submit" onclick="send('myform','result2');" onclick="document.getElementById('myForm2').submit(); clean()" value='Купить'>
+					</div>
+					<div id="result2"></div>
 				</div>
 			   
 			</form>		
