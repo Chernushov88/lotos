@@ -803,6 +803,7 @@ textarea{
     float: left;
 }
 .desc-condition{
+    max-width: 350px;
     float: right;
 }
 .stock{
@@ -1080,7 +1081,7 @@ textarea{
     text-decoration: none;
 }
 .orders-num{
-    height: 132px;
+    min-height: 132px;
     margin: 0 0 9px 0;
     padding: 22px 19px 26px 18px;
     font-size: 18px;
@@ -1092,5 +1093,6 @@ textarea{
     font-size: 20px;    
 }
 .orders-num li{
-    height: 24px;
+    overflow: hidden;
+    min-height: 24px;
 }
