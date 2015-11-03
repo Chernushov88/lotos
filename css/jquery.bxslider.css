@@ -199,19 +199,19 @@
 
 @media (min-width:320px) and (max-width:767px){
 .slider .bx-wrapper .bx-prev {
-	left: 3px;
+	left: 4px;
 	background: url(../images/content/bg_direction_nav-mobile.png) no-repeat 1px 0px;
 }
 
 .slider .bx-wrapper .bx-next {
-	right: 3px;
+	right: 5px;
 	background: url(../images/content/bg_direction_nav-mobile.png) no-repeat -23px 0px;
 }
 .bx-wrapper .bx-controls-direction a {
 	top: 55.5%;
-	margin-top: -19px;
+	margin-top: -21px;
 	outline: 0;
-	width: 23px;
+	width: 24px;
 	height: 23px;
 }
 

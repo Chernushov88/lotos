@@ -1,9 +1,7 @@
 ﻿@charset "utf-8";  
 
 @import url(css/media.css);
-@import url(css/reset.css); 
-
- 
+@import url(css/reset.css);  
 /* ----------------------------Блок присоединения шрифтов--------------------------------*/
 
 @font-face {
@@ -46,10 +44,6 @@ src: url('fonts/PhilosopherBoldItalic/PhilosopherBoldItalic.eot?#iefix') format(
 font-weight: normal;
 font-style: normal;
 }
-
-
-
-
 /* ------------------------------ Конец блока присоединения шрифтов ------------------------------*/
 /*-----------------------------------------------------------------------------------*/
 /*  TYPOGRAPHY
@@ -144,6 +138,12 @@ header{
     height: 49px;    
     cursor: pointer;
     color: #fffefe;
+}
+.login li:hover{
+    border-top: 4px solid #f2be6d;
+}
+.login li a:hover{
+    color: #f2be6d;
 }
 .cart{
     width: 221px;
@@ -380,7 +380,7 @@ form.search input[type=submit]{
 }
 .content-text h2 span{
     display: inline-block;
-    padding: 3px 0 0px 0;
+    padding: 3px 0;
     border-bottom: 2px solid #0e76bb;
 }
 .content-text p{
@@ -464,26 +464,30 @@ form.search input[type=submit]{
     background: url(images/content/sidebar3-bg.jpg);
 }
 .banner-1{
-    width: 301px;
-    height: 420px;
-    margin: 20px 0 0 0;
-    background: url(images/content/banner1-bg.jpg);
+    margin: -20px 0 0 0;
 }
-.banner-2{
-    width: 301px;
-    height: 199px;
-    margin: 20px 0 0 0;
-    background: url(images/content/banner2-bg.jpg);
+.banner-1 a, .banner-2 a {
+    display: block;
+    width: 100%;
+    padding: 0;
+    background: none;
+    border: none;
+}
+.banner-1 a:hover, .banner-2 a:hover{
+    background: none;
 }
 .banner-1 h4{
-    padding: 362px 0 0 0;
+    position: relative;
+    top: 362px;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 32px;
     color: #fff;
 }
 .banner-2 h4{
-    padding: 88px 0 0px 90px;
+    position: relative;
+    top: 115px;
+    left: 44px;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 26px;
@@ -551,7 +555,7 @@ footer{
 .social li a:hover{
     opacity: 0.7;
 }
-.social li:first-child a{
+/*.social li:first-child a{
     background: url(images/footer/vk-bg.png)no-repeat;
 }
 .social li:nth-child(2) a{
@@ -559,7 +563,7 @@ footer{
 }
 .social li:last-child a{
     background: url(images/footer/facebook-bg.png)no-repeat;
-}
+}*/
 /*-----*/
 .logo-footer{
     width: 518px;
@@ -1095,4 +1099,161 @@ textarea{
 .orders-num li{
     overflow: hidden;
     min-height: 24px;
+}
+
+
+
+
+/*  auto controls  */
+.bx-controls-auto{
+  margin: 5px 0 0;
+  @include pie-clearfix;
+  .bx-controls-auto-item{
+    display: inline-block;
+    float: left;
+    .bx-start,
+    .bx-stop{
+      display: block;
+      @include squish-text;
+      @include single-transition(background-color, .1s, ease-in-out);
+    }
+    .bx-start{
+      @include arrow-right(7px,lighten($color,20%));
+    }
+    .bx-stop{
+      width: 14px;
+      height: 14px;
+      margin: 0 0 0 5px;
+      background-color: lighten($color,20%);
+    }
+  }
+}
+/*-----------------------------------------------------------------------------------*/
+/*  CATALOG
+/*-----------------------------------------------------------------------------------*/
+.content-catalog{
+    overflow: hidden;
+}
+.content-catalog h2{
+    margin: 0 0 18px 0;
+}
+.list-catalog{
+    width: 198px;
+    margin: 0 9px 18px 0;
+    padding: 3px 0 8px 0;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    float: left;
+}
+.list-catalog-three{
+    margin-right: 0;
+}
+.list-catalog:hover{
+    width: 196px;
+    padding: 2px 0 7px 0;
+    border: 2px solid #25aae2;    
+}
+.list-catalog img{
+    display: table;
+    margin: 0 auto;
+    color: #373636;
+}
+.list-catalog li{
+    text-align: center;
+}
+.list-name-catalog{
+    margin: 17px 0 10px 0;
+    font-size: 20px;
+    line-height: 18px;
+}
+.list-name-catalog span{
+    display: block;
+    margin: 4px 0 0 0;
+    font-family: 'PhilosopherBold';
+    font-size: 14px;
+}
+.list-name-catalog span .art{
+    font-family: 'PhilosopherRegular';
+}
+.list-price-catalog{
+    font-size: 32px;
+    line-height: 27px;
+    color: #0e76bb;
+    letter-spacing: 1.5px;
+}
+.list-price-catalog span{
+    font-size: 24px;
+}
+.buy-catalog{
+    display: table;
+    margin: 6px auto 0 auto;
+}
+.buy-catalog a{
+    display: table-cell;
+    vertical-align: middle;
+    width: 185px;    
+    height: 40px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;   
+    background: url(images/content/catalog/btn-catalog.png);
+}
+.buy-catalog a:hover{
+    width: 183px;    
+    height: 38px;
+    color: #25aae2;
+    background: #fff;
+    border: 1px solid #25aae2;
+    border-radius: 4px;
+}
+/* start pager */
+.pager{width: 100%;}
+.pager-inside{
+    display: table;
+    min-width: 250px;
+    margin: 0 auto;
+    font-size: 16px;    
+}
+.pager-inside li{
+    margin: 0 1px 0 0;
+    padding: 6px 12px 0px 11px;
+    border-radius: 5px;
+    float: left;
+}
+.pager-inside li.active a{
+    color: #f2be6d;
+}
+.pager-inside a{
+    text-decoration: underline;
+    color: #797674;
+}
+.pager-inside a:hover{
+    color: #25aae2;
+}
+/* stop pager */
+/* content-text-bottom */
+.content-text-bottom {
+    padding: 31px 0 0 0;
+}
+.content-text-bottom h2{
+    margin: 0 0 5px 0;
+    font-family: 'PhilosopherRegular';
+    letter-spacing: 0px;
+    border-bottom: 1px solid #0e76bb;
+}
+.content-text-bottom h2 span{
+    display: inline-block;
+    padding: 3px 0;
+    border-bottom: 2px solid #0e76bb;
+}
+.content-text-bottom p{
+    line-height: 22px;
+}
+.content-text-bottom p a{
+    text-decoration: underline;
+    color: #25aae2;
+}
+.content-text-bottom p a:hover{
+    text-decoration: none;
 }

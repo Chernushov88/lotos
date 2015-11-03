@@ -381,37 +381,32 @@
    	// var liMini = $('.slides li').css('width');
    	// alert (liMini);
    	var liMini;
-var w = $(window).width();
-if ( w > 1204) {
-	liMini = 107;
-    } 
-    else if (w < 1204) {
-       liMini = 61;
-    }
-  // The slider being synced must be initialized first
+	var w = $(window).width();
+	if ( w > 1204) {
+		liMini = 107;
+	    } 
+	    else if (w < 1204) {
+	       liMini = 61;
+	    }
+	  // The slider being synced must be initialized first
 
-  $('#carousel').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    itemWidth: liMini,
-    itemMargin: 4,
-    asNavFor: '#slider'
-  });
-  $('#slider').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    sync: "#carousel"
-  });
-});
-
-
- 
-
-
+	  $('#carousel').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    itemWidth: liMini,
+	    itemMargin: 4,
+	    asNavFor: '#slider'
+	  });
+	  $('#slider').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    sync: "#carousel"
+	  });
+	});
   </script>
 
 
