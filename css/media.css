@@ -162,7 +162,7 @@
 @media (min-width:320px) and (max-width:767px){ 
 	.desktop-hidden {display: block;}
 	.desktop-visible {display: none;}
-	.mobile-hidden {display: none;}
+	.mobile-hidden {display: none !important;}
 	.mobile-visible{display: block !important;}
 	div.contacts-mobile {display: inline-block !important;}
 
@@ -327,15 +327,22 @@
 	li.buy-catalog {margin-top: 1px;}
 	li.buy-catalog a{width: 160px; height: 34px; font-size: 13.6px; background: url(../images/content/catalog/btn-catalog-tablet.png);}
 	li.buy-catalog a:hover{width: 158px; height: 32px;}
-	ul.pager-inside {width: 100%; font-size: 18px;}
-	.content-text-bottom p {font-size: 15px;}
+	
+	.pager {padding: 4px 0 0 0;}
+	ul.pager-inside {display: block; width: 85%; text-align: center; font-size: 18px;}	
+	.previous-block {margin: 1px 0 0 0; float: left;}
+	.next-block {margin: -22px 0 0 0; float: right}
 	ul.pager-inside a {text-decoration: none; padding: 10px 15px; background: #25aae2; border-radius: 5px; color: #fff;}
 	ul.pager-inside a:hover {color: #ccc;}
-	ul.pager-inside li {padding: 6px 8px 0px 7px;}
-	ul.pager-inside li.previous, ul.pager-inside li.next {padding: 0;}
-	ul.pager-inside li.next {float: right;}
+	ul.pager-inside li.pager-mob{display: inline-block; float: none;}
+	ul.pager-inside li {padding: 6px 6px 0px 5px;}
+	ul.pager li.previous, ul.pager li.next {padding: 0;}
+	ul.pager li.next {float: right;}
 	li.previous a, li.next a{display: block; margin: -5px 0 0 0; padding: 0; font-family: 'PhilosopherBold'; font-size: 36px; color: #25aae2; background: none;}
+	
 
+	div.content-text-bottom h2 span {padding: 1px 0;}
+	.content-text-bottom p {font-size: 14px; line-height: 19px;}
 }
 
 
